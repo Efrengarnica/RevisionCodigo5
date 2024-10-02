@@ -2,8 +2,15 @@ import java.util.Scanner; //Importar
 
 public class Codigo5 {
 	
+	
+	
+	//Este programa recibe cualquier numero entero y si el numero entero tiene varios digitos va a contabilizar los 
+	// digitos que son afortunados y los que NO y al final si hay más digitos afortunados que NO afortunados se considerara un numero
+	//afortunado
 	//Al parecer se busca que el usuario ingrese un numero y dependiendo del codigo de abajo se decide si el numero es 
 	// afortunado o no, lo interesante aqui es que se ocupa ni /= 10; para hacer que la variable decremente.
+	
+	
 
 	public static void main(String[] args) {  //Agregar
     Scanner s = new Scanner(System.in); //Agregar para que leea
