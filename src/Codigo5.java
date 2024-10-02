@@ -1,6 +1,9 @@
 import java.util.Scanner; //Importar 
 
 public class Codigo5 {
+	
+	//Al parecer se busca que el usuario ingrese un numero y dependiendo del codigo de abajo se decide si el numero es 
+	// afortunado o no, lo interesante aqui es que se ocupa ni /= 10; para hacer que la variable decremente.
 
 	public static void main(String[] args) {  //Agregar
     Scanner s = new Scanner(System.in); //Agregar para que leea
@@ -17,16 +20,17 @@ public class Codigo5 {
 		afo++;
       } else {
 		noAfo++;
-	  
-	  ni /= 10;
     }
-    if (afo > noAfo) {
+      //Se sacó del else para que termine el ciclo
+      ni /= 10;  // Esto hace que se acabe el while ya que como ni es entero cuando ni sea un numero decimal le quita la parte decimal
+      }//while se cierra aqui NO tiene sentido que se cierre mas abajo
+    if (afo > noAfo) {// Se sacaron los if del while 
       System.out.println("El " + c + " es un número afortunado."); //Arregar sintaxis
     } else {
       System.out.println("El " + c + " no es un número afortunado.");
     }
-    
-  }
+    s.close();// Se cierra el System.in 
   
-	}
-}
+	}// main 
+}// class Codigo5
+
